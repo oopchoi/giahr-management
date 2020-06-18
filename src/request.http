@@ -1,0 +1,26 @@
+GET http://localhost:8080/customers
+
+###
+
+GET http://localhost:8080/customers?nameFilter=GiaHR
+
+###
+
+POST http://localhost:8080/customer
+content-type: application/json
+
+{
+  "id": 17,
+  "name": "GiaHR.com",
+  "telephone": {
+    "countryCode": "+82",
+    "telephoneNumber": "01094980000"
+  }
+}
+
+###
+
+DELETE http://localhost:8080/customer/1
+
+###
+
